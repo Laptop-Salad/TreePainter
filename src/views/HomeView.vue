@@ -59,7 +59,7 @@ function insert(i) {
 }
 
 function traverse(root, x, y, offset) {
-  if (root != null) {
+  if (root != null && root.value != null) {
     drawNode(root.value, x, y);
 
     traverse(root.right, x - offset, y + 120, offset / 2);
